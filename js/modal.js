@@ -72,7 +72,13 @@ $(document).ready(function() {
             tag: '',
             detail: 'kavi sammelan, kavi sammelan organizer, kavi sammelan organizers, hasya kavisammelan organizer, hasyakavisammelan organizers" /><meta name="description" content="Kavi Sammelan- Hasya Kavi sammelan organizer, Kavi sammelan organizers in India. To make us organize a Kavi Sammelan for you, all you need to do is contact us.',
             link: 'http://thetrainingdesk.com'
-        }
+        },
+		ibta: {
+			title: '',
+            tag: '',
+            detail: '',
+            link: ''
+		}
     };
 
     $('#gallery .button').on('click', function() {

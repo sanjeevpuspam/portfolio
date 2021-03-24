@@ -179,24 +179,23 @@ $(function() {
     onScrollInit($('.waypoint'));
   }, 10);
 
-  // CONTACT FORM
-  $('#contact-form').submit(function(e) {
-    e.preventDefault();
 
-    $.ajax({
-      url: 'https://formspree.io/mattwilliams85@gmail.com',
-      method: 'POST',
-      data: { message: $('form').serialize() },
-      dataType: 'json'
-    }).done(function(response) {
-      $('#success').addClass('expand');
-      $('#contact-form')
-        .find('input[type=text], input[type=email], textarea')
-        .val('');
-    });
-  });
 
   $('#close').click(function() {
     $('#success').removeClass('expand');
-  });
+  });	 
+  
 });
+$(document).ready(function(){
+	$(window).scroll(function(){
+	if($(this).scrollTop() > 100){
+		$('.to-top').fadeIn();
+	} else {
+		$('.to-top').fadeOut();
+	}
+});
+$('.to-top').click(function(){
+    $("html, body").animate({scrollTop : 0},700);
+    return false;
+});
+})
