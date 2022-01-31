@@ -73,12 +73,24 @@ $(document).ready(function() {
             detail: 'kavi sammelan, kavi sammelan organizer, kavi sammelan organizers, hasya kavisammelan organizer, hasyakavisammelan organizers" /><meta name="description" content="Kavi Sammelan- Hasya Kavi sammelan organizer, Kavi sammelan organizers in India. To make us organize a Kavi Sammelan for you, all you need to do is contact us.',
             link: 'http://thetrainingdesk.com'
         },
-		ibta: {
-			title: '',
+        ibta:{
+            title: '',
             tag: '',
             detail: '',
             link: ''
-		}
+        },
+        medtronic: {
+            title: 'All ;Healthcare Professionals;Patients & Caregivers',
+            tag: 'Healthcare Professionals, Patients & Caregivers, medical-specialties',
+            detail: 'Medtronic is a global leader in medical technology, services, and solutions. We collaborate with others to take on healthcare`s greatest challenges. See how.',
+            link: 'https://www.medtronic.com'
+        },
+        pim: {
+			title: 'mecApp',
+            tag: '',
+            detail: '',
+            link: 'http://uat.us.connect.medtronic.com/apps/portal/mecApp'
+		},
     };
 
     $('#gallery .button').on('click', function() {

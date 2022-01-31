@@ -821,6 +821,15 @@ section:nth-of-type(3) #gallery .mix:nth-child(11) .card {
 section:nth-of-type(3) #gallery .mix:nth-child(12) .card {
     background: url("../img/thumb-12.jpg") center center/cover;
 }
+section:nth-of-type(3) #gallery .mix:nth-child(13) .card {
+    background: url("../img/thumb-13.jpg") center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(14) .card {
+    background: url("../img/thumb-14.jpg") center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(15) .card {
+    background: url("../img/thumb-15.jpg") center center/cover;
+}
 section:nth-of-type(3) #gallery .mix .card {
     height: 240px;
     max-width: 100%;
@@ -937,6 +946,8 @@ section:nth-of-type(5) form {
 }
 section:nth-of-type(5) input[type=text],
 section:nth-of-type(5) input[type=email],
+section:nth-of-type(5) input[type=url],
+section:nth-of-type(5) input[type=tel],
 section:nth-of-type(5) textarea {
     background: #1e242c;
     border: 0;

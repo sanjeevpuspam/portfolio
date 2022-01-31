@@ -198,4 +198,18 @@ $('.to-top').click(function(){
     $("html, body").animate({scrollTop : 0},700);
     return false;
 });
+
+  $('#myForm').on('submit', function(e) {
+      e.preventDefault(); // prevent reload
+      var formData = new FormData(this);
+      formData.append('service_id', 'service_6oae67h');
+      formData.append('template_id', 'template_sowd8ne');
+      formData.append('user_id', 'user_5vhBDw6YFSfCew5bMtTAD');
+      $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {type: 'POST',data: formData, contentType: false, processData: false }).done(function(){
+          $(this).hide();
+          $('#success').addClass('expand');
+      }).fail(function(error) {
+          console.log('Oops... ' + JSON.stringify(error));
+      });
+  });
 })

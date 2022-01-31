@@ -62,7 +62,7 @@
             <div class="flex">
                 <div class="text">
                     Hello, I'm <span class="highlight">Sanjeev Puspam</span>.
-                    <br /> I'm a JavaScript/LAMP/Full Stack Developer.
+                    <br /> I'm a PHP/JavaScript Full Stack Developer.
                 </div>
 
                 <div class="button page-link" dest="about">
@@ -165,13 +165,13 @@
                     <div class="flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
                         <div class="bar flex">
                             <div class="bar fill" style="width:90%">
-                                <div class="tag bold flex">HTML5</div>
+                                <div class="tag bold flex">HTML</div>
                             </div>
                             <span>90%</span>
                         </div>
                         <div class="bar flex">
                             <div class="bar fill" style="width:90%">
-                                <div class="tag bold flex">CSS3</div>
+                                <div class="tag bold flex">CSS / SCSS</div>
                             </div>
                             <span>90%</span>
                         </div>
@@ -258,10 +258,10 @@
                         </div>
 
                         <div class="bar flex">
-                            <div class="bar fill" style="width:30%">
+                            <div class="bar fill" style="width:25%">
                                 <div class="tag bold flex">Photoshop</div>
                             </div>
-                            <span>30%</span>
+                            <span>25%</span>
                         </div>
                     </div>
                 </div>
@@ -429,6 +429,26 @@
                         <div class="button" id="ibta">LEARN MORE</div>
                     </div>
                 </div>
+                <div class="mix react jquery html" data-my-order="13">
+                    <div>
+                        <div class="card"></div>
+                        <div class="text">
+                            <div class="bold"></div>
+                            <span class="highlight">jQuery / ReactJS / HTML </span>
+                        </div>
+                        <div class="button" id="medtronic">LEARN MORE</div>
+                    </div>
+                </div>
+                <div class="mix react" data-my-order="13">
+                    <div>
+                        <div class="card"></div>
+                        <div class="text">
+                            <div class="bold"></div>
+                            <span class="highlight"> ReactJS / HTML </span>
+                        </div>
+                        <div class="button" id="pim">LEARN MORE</div>
+                    </div>
+                </div>
 
             </div>
         </section>
@@ -464,31 +484,16 @@
                 <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s">
                     Have a question or want to work together?
                 </div>
-
-                <footer class="waypoint animated pop-in" data-animation="pop-in" data-delay=".5s" id="contact-form" style="animation-delay: 0.5s;">
-                    <div class="icon-wrap flex row">
-                        <a href="https://wa.me/+917428843326?text=Hi%20Developer%2C%0A%0AI%20want%20to%20create%20a%20beautiful%20website%2C%20can%20you%20help%20me%3F" target="_blank">
-                            <div class="flex whatsapp icon" id="icon-1">
-                                <i class="mdi mdi-whatsapp"></i>
-                            </div>
-                        </a>
-                        <a href="http://m.me/w3websolution" target="_blank">
-                            <div class="flex messanger icon" id="icon-2">
-                                <i class="mdi mdi-facebook-messenger"></i>
-                            </div>
-                        </a>
-                        <a href="tel:+917428843326" target="_blank">
-                            <div class="flex phone icon" id="icon-3">
-                                <i class="mdi mdi-cellphone"></i>
-                            </div>
-                        </a>
-                        <a href="mailto:sanjeev.puspam@gmail.com" target="_blank">
-                            <div class="flex gemail icon" id="icon-4">
-                                <i class="mdi mdi-email"></i>
-                            </div>
-                        </a>
-                    </div>
-                </footer>
+                <form class="waypoint" id="myForm" data-animation="pop-in" data-delay=".5s" id="contact-form">
+                    <input placeholder="Name" type="text" name="from_name" required />
+                    <input placeholder="+91 9999999999" type="tel" name="user_phone"  />
+                    <input placeholder="abc@xyz.in" type="email" name="user_email" required /> 
+                    <input placeholder="xyz.in" type="url" name="user_website" required />  
+                    <textarea placeholder="Your Message" type="text" name="user_message"></textarea>
+                    <div id="success">
+                        <div> Your message was sent successfully. Thanks!<span id="close"class="mdi mdi-close"></span> </div></div>
+                    <input class="button" type="submit" id="submit" value="SUBMIT" />
+              </form>
             </div>
         </section>
         <footer>
